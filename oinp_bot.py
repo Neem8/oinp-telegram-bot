@@ -22,10 +22,11 @@ def daily_message():
     send_telegram("🌞 Good morning!")
 
 # Schedule the message every day at 4:00 AM
-schedule.every().day.at("04:00").do(daily_message)
+schedule.every().day.at("04:04").do(daily_message)
 
 print("Telegram daily bot running...")
 
 while True:
     schedule.run_pending()
     time.sleep(30)
+
